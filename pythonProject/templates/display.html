@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display all the branch</title>
+</head>
+<body>
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Hotel_id</th>
+        <th scope="col">Location</th>
+        <th scope="col">Hotel_name</th>
+        <th scope="col">Owner</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for branch in branches %}
+            <tr>
+                <td>{{ branch.id }}</td>
+                <td>{{ branch.location }}</td>
+                <td>{{ branch.name }}</td>
+                <td>{{ branch.owner }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

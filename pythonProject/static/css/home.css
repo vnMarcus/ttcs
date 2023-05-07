@@ -1,0 +1,6 @@
+.button-container {
+  display: grid;
+    background-color: beige;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
